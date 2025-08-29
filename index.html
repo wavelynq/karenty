@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juan Dela Cruz</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+  <div class="card">
+
+    <!-- Header with user + logo -->
+    <div class="header">
+      <div class="info">
+        <div class="user-wrap">
+          <img src="user.png" alt="User" class="user">
+        </div>
+        <h2>Juan Dela Cruz</h2>
+        <p class="title">Lead Creative • Wavelynq</p>
+        <a href="https://maps.app.goo.gl/mijjZN4Kt31RoL6L8" class="location" target="_blank">
+          <i class="ri-map-2-line"></i> Taguig, Metro
+        </a>
+      </div>
+      <div class="divider"></div>
+      <div class="logo-wrap">
+        <img src="logo.png" alt="Logo" class="logo">
+      </div>
+    </div>
+
+    <!-- Bio -->
+    <p class="bio">
+      We make custom craft to your needs 
+      Tap to call, message, or save my contact.
+    </p>
+
+    <!-- Buttons -->
+    <div class="button-grid">
+  <a href="tel:+63912345678" class="btn call"><i class="ri-phone-fill"></i></i> Call</a>
+  <a href="mailto:artwareprints@gmail.com" class="btn email"><i class="ri-mail-send-line"></i> Email</a>
+  <a href="https://www.facebook.com/artwareprints/" target="_blank" class="btn website"><i class="ri-global-line"></i> Website</a>
+  <a href="user.vcf" class="btn save"><i class="ri-download-line"></i> Save Contact</a>
+  <a href="#" class="btn share" onclick="shareCard(event)"><i class="ri-share-forward-fill"></i> Share Card</a>
+  <script>
+    function shareCard(e) {
+      e.preventDefault();
+      if (navigator.share) {
+        navigator.share({
+          title: 'Wavelynq',
+          text: 'Check out my contact card!',
+          url: window.location.href
+        });
+      } else {
+        alert('Sharing is not supported on this device.');
+      }
+    }
+  </script>
+</div>
+
+    <!-- Social icons -->
+    <div class="socials">
+      <a href="#" target="_blank"><i class="ri-facebook-circle-line"></i></a>
+      <a href="#" target="_blank"><i class="ri-instagram-line"></i></a>
+      <a href="#" target="_blank"><i class="ri-linkedin-box-line"></i></a>
+      <a href="#" target="_blank"><i class="ri-telegram-2-line"></i></a>
+    </div>
+
+    <!-- Footer -->
+    <p class="footer">Tap or scan to connect • © 2025 Wavelynq</p>
+  </div>
+</body>
+</html>
